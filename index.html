@@ -1,9 +1,5 @@
+
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Catherine Kim | Software Engineer</title>
@@ -15,6 +11,9 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 	</head>
 	<body class="is-preload">
 
@@ -51,8 +50,9 @@
 							<article id="about">
 								<h2 class="major">About</h2>
 								<span class="image about"><img src="images/about_photo.jpg" alt="" /></span>
-								<p>My name is Catherine. I am a designer turned software engineer who loves thinking about the connection between technology and the human mind.</p>
-								<p>Prior to becoming a software engineer, I was a fashion designer - very much immersed in the world of creativity. I had always been passionate about technology, 
+								<span class="friendly">Hello, I'm Catherine.</span>
+								<p>I am a designer turned software engineer who loves thinking about the connection between technology and the human mind.</p>
+								<p>Prior to becoming a software engineer, I was a fashion designer - very much immersed in the world of creativity; however, I had always been passionate about technology - 
 									having taught myself how to create "choose your own adventure" type of games on MS-DOS at the age of 8, and learning HTML and CSS at the age 12.
 								</p>
 								<p> I enjoy problem-solving, building practical systems and products, and even figuring out the annoying little bugs. The constant challenge and the never-ending list of new technologies to learn is exciting for me. 
@@ -316,31 +316,44 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="mailto:catkimyj@gmail.com">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+									
+									<section class="contact-container">
+										<div class="contact-sub">
+											<div class="contact-icon">
+												<i class="fas fa-map-marker-alt"></i>
+											</div>
+											<span class="contact-text">New York, NY</span>
 										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+										<div class="contact-sub">
+											<div class="contact-icon">
+												<i class="fas fa-mobile-alt"></i>
+											</div>
+											<span class="contact-text">(929)-399-6005</span>
 										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
+										<div class="contact-sub">
+											<div class="contact-icon">
+												<i class="fas fa-at"></i>
+											</div>
+											<span class="contact-text">catkimyj@gmail.com</span>
 										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
+										<div class="contact-sub">
+										</div>
+									</section>
+								<ul class="icons icons-container">
 									<li><a href="https://github.com/catherinekimyj" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 									<li><a href="https://www.linkedin.com/in/catherinekimyj/" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
 									<li><a href="https://angel.co/u/catherinekimyj" class="icon brands fa-angellist"><span class="label">Facebook</span></a></li>
 								</ul>
+
+								<script language="JavaScript">
+									// Code for validating the form
+									// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+									// for details
+									let frmvalidator  = new Validator("email-form");
+									frmvalidator.addValidation("name","req","Please provide your name"); 
+									frmvalidator.addValidation("email","req","Please provide your email"); 
+									frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+									</script>
 							</article>
 
 						<!-- Elements -->
@@ -603,6 +616,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="js/jquery.flexslider-min.js"></script>
+			<script language="JavaScript" src="gen_validatorv31.js" type="text/javascript"></script>
 	</body>
 </html>
