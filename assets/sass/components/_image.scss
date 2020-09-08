@@ -73,6 +73,13 @@
 			}
 		}
 
+		&.about {
+			display: block;
+			margin: (_size(element-margin) * 1.25) 0;
+			width: 50%;
+			border-radius: 25%;
+		}
+
 		@include breakpoint('<=small') {
 			&.main {
 				margin: (_size(element-margin) * 1) 0;
