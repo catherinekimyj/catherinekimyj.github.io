@@ -1206,6 +1206,7 @@ input, select, textarea {
 		-ms-transform: scale(1.0);
 		transform: scale(1.0);
 		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -1599,6 +1600,7 @@ input, select, textarea {
 	.friendly {
 		font-family: 'Caveat', cursive;
 		font-size: 1.5rem;
+		color: rgba(255, 255, 255, 0.8);
 		width: 100%;
 		text-align: center;
 	}
@@ -1797,6 +1799,9 @@ input, select, textarea {
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		transition: 1s;
 	}
 
@@ -1820,6 +1825,9 @@ input, select, textarea {
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		transition: 1s;
 	}
 
@@ -1843,6 +1851,9 @@ input, select, textarea {
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		transition: 1s;
 	}
 
@@ -1857,11 +1868,14 @@ input, select, textarea {
 	}
 
 	.project-title {
-		width: 100%;
+		width: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 5px;
 		text-align: center;
 		letter-spacing: 3.5px;
-		font-size: 1.5rem;
-		background-color: rgba(0, 0, 0, 0.35);
+		font-size: 1.25rem;
+		background-color: rgba(0, 0, 0, 0.6);
 		font-weight: bold;
 		text-transform: uppercase;
 		position: absolute;
@@ -2040,16 +2054,26 @@ input, select, textarea {
 
 .prev-page:hover .fa-chevron-left {
 	-webkit-animation: arrow-left 1s infinite;
-	-moz-animation:    arrow-left 1s infinite
+	-moz-animation:    arrow-left 1s infinite;
 	-o-animation:      arrow-left 1s infinite;
 	animation:         arrow-left 1s infinite;
 }
 
 .next-page:hover .fa-chevron-right {
 	-webkit-animation: arrow-right 1s infinite;
-	-moz-animation:    arrow-right 1s infinite
+	-moz-animation:    arrow-right 1s infinite;
 	-o-animation:      arrow-right 1s infinite;
 	animation:         arrow-right 1s infinite;
+}
+
+@keyframes arrow-right {
+	0%   { opacity: 0;}
+	100% { opacity: 1; 
+	  -webkit-transform: translateX(10px);
+	  -moz-transform: translateX(10px);
+	  -o-transform: translateX(10px);
+	  transform: translateX(10px);
+	}  
 }
 
 @-webkit-keyframes arrow-right {
@@ -2059,6 +2083,16 @@ input, select, textarea {
 	  -moz-transform: translateX(10px);
 	  -o-transform: translateX(10px);
 	  transform: translateX(10px);
+	}  
+}
+
+@keyframes arrow-left {
+	0%   { opacity: 0;}
+	100% { opacity: 1; 
+	  -webkit-transform: translateX(-10px);
+	  -moz-transform: translateX(-10px);
+	  -o-transform: translateX(-10px);
+	  transform: translateX(-10px);
 	}  
 }
 
