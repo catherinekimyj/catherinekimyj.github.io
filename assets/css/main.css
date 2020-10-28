@@ -1867,6 +1867,42 @@ input, select, textarea {
 		transition: 1s;
 	}
 
+	.mintbot-img-container {
+		position: relative;
+		height: 18rem;
+		width: 18rem;
+		opacity: 0.8;
+		border-radius: 5px;
+		background-image: url("../../images/mintbot.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: 1s;
+	}
+
+	.mintbot-img-container:hover {
+		opacity: 1;
+		cursor: pointer;
+	}
+
+	.mintbot-img-container:hover .project-title {
+		opacity: 0;
+		transition: 1s;
+	}
+
+	.project-description a {
+		text-transform: uppercase;
+		font-size: 0.8rem;
+		font-weight: bold;
+	}
+
+	.project-description a:hover {
+		color: grey;
+	}
+
 	.project-title {
 		width: auto;
 		padding-left: 10px;
@@ -1928,6 +1964,10 @@ input, select, textarea {
 		}
 
 		.depth-img-container {
+			width: 100%;
+		}
+
+		.mintbot-img-container {
 			width: 100%;
 		}
 
