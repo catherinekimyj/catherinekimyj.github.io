@@ -2073,6 +2073,164 @@ input, select, textarea {
 	}
 }
 
+/* Resume */
+
+.resume-header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	gap: 1rem;
+	margin: 0 0 2rem 0;
+}
+
+.resume-header h2.major {
+	margin: 0;
+}
+
+.resume-actions {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 0.6rem;
+}
+
+.resume-actions .button {
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+	color: rgba(255, 255, 255, 0.65) !important;
+	font-size: 0.55rem;
+	letter-spacing: 0.15rem;
+	height: 2.1rem;
+	line-height: 2.1rem;
+	padding: 0 1rem 0 1.1rem;
+}
+
+.resume-actions .button:hover {
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.05);
+	color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.resume-actions .button:before {
+	opacity: 0.8;
+}
+
+#resume h3 {
+	border-bottom: solid 1px rgba(255, 255, 255, 0.35);
+	padding-bottom: 0.5rem;
+	margin: 2.5rem 0 1.5rem 0;
+}
+
+#resume h3:first-of-type {
+	margin-top: 0;
+}
+
+.resume-entry {
+	margin-bottom: 1.5rem;
+}
+
+.resume-entry:last-of-type {
+	margin-bottom: 0;
+}
+
+.resume-entry-compact {
+	margin-bottom: 0.75rem;
+}
+
+.resume-entry-head {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+	gap: 1rem;
+}
+
+.resume-role {
+	font-size: 0.9rem;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+
+.resume-role em {
+	color: rgba(255, 255, 255, 0.7);
+	font-weight: 400;
+}
+
+.resume-note {
+	font-size: 0.75rem;
+	font-style: italic;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.55);
+	white-space: nowrap;
+}
+
+.resume-dates {
+	font-size: 0.7rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: rgba(255, 255, 255, 0.6);
+	white-space: nowrap;
+}
+
+.resume-bullets {
+	list-style: disc;
+	margin: 0.6rem 0 0 0;
+	padding-left: 1.25rem;
+}
+
+.resume-bullets li {
+	font-size: 0.85rem;
+	line-height: 1.65;
+	color: rgba(255, 255, 255, 0.8);
+	letter-spacing: 0.25px;
+	padding-left: 0.35rem;
+	margin-bottom: 0.4rem;
+}
+
+.resume-bullets li:last-child {
+	margin-bottom: 0;
+}
+
+.resume-skills {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.resume-skills li {
+	font-size: 0.85rem;
+	line-height: 1.65;
+	color: rgba(255, 255, 255, 0.8);
+	letter-spacing: 0.25px;
+	padding: 0;
+	margin-bottom: 0.5rem;
+}
+
+.resume-skill-label {
+	font-size: 0.7rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	margin-right: 0.4rem;
+}
+
+@media screen and (max-width: 530px) {
+
+	.resume-entry-head {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.2rem;
+	}
+
+	.resume-note {
+		white-space: normal;
+	}
+
+}
+
 /* Page Flip Navigation */
 
 .page-flip-container {
