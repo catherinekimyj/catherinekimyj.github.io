@@ -6,7 +6,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!-- Bump ?v= whenever main.css changes, so returning visitors don't get a stale cached stylesheet -->
-		<link rel="stylesheet" href="assets/css/main.css?v=20260804" />
+		<link rel="stylesheet" href="assets/css/main.css?v=20260820" />
 		<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
@@ -294,8 +294,8 @@
 								<div class="resume-header">
 									<h2 class="major">Resumé</h2>
 									<div class="resume-actions">
-										<a href="images/resume26ck1.pdf" class="button small icon solid fa-external-link-alt" target="_blank">Open PDF</a>
-										<a href="images/resume26ck1.pdf" class="button small icon solid fa-download" download>Download PDF</a>
+										<a href="images/resume26ck2.pdf" class="button small icon solid fa-external-link-alt" target="_blank">Open PDF</a>
+										<a href="images/resume26ck2.pdf" class="button small icon solid fa-download" download>Download PDF</a>
 									</div>
 								</div>
 
@@ -303,34 +303,31 @@
 
 								<div class="resume-entry">
 									<div class="resume-entry-head">
-										<span class="resume-role">Staff Software Engineer, <em>Pager</em></span>
+										<span class="resume-role">Staff Software Engineer, <em>Pager Health</em></span>
 										<span class="resume-dates">Jan. 2026 &ndash; Apr. 2026</span>
 									</div>
-									<ul class="resume-bullets">
-										<li>Led a six-week modernization of a legacy rewards platform, delivering configurable tools for insurance clients to define reward types and earning logic; used AI-assisted development to accelerate delivery and reposition the feature from planned sunset to a client-facing advantage that supported deal momentum</li>
-									</ul>
-								</div>
-
-								<div class="resume-entry">
 									<div class="resume-entry-head">
-										<span class="resume-role">Lead Software Engineer, <em>Pager</em></span>
+										<span class="resume-role">Lead Software Engineer, <em>Pager Health</em></span>
 										<span class="resume-dates">Jan. 2025 &ndash; Dec. 2025</span>
 									</div>
 									<ul class="resume-bullets">
-										<li>Led 4+ multi-team feature initiatives as engineering lead, owning solution architecture, RFC authorship, and execution strategy; served as the primary liaison between Engineering and Product while influencing broader technical direction through design reviews and technical decision forums</li>
-										<li>Architected and deployed a CSV ingestion pipeline using GCP Pub/Sub with Terraform infrastructure-as-code, enabling persistence for 100K+ production records across services while reducing provisioning overhead and improving deployment repeatability. Authored system diagrams that accelerated team onboarding</li>
-										<li>Established and institutionalized a proof-of-validation and SDET handoff framework adopted beyond the originating team, reducing QA bottlenecks and enabling engineers to ship with greater autonomy</li>
+										<li>Drove 5+ multi-team feature initiatives as engineering lead, authoring solution architecture and execution strategy</li>
+										<li>Led a six-week modernization of a legacy rewards platform, rebuilding its React and Node.js services while designing an agentic development workflow with specialized AI agents and reusable skills to accelerate delivery of a client-ready demo that supported retention efforts</li>
+										<li>Processed 100K+ production records by designing and implementing a scalable Cloud Run&ndash;based consumer for a GCP Pub/Sub ingestion pipeline, architecting downstream processing and data persistence through Kubernetes and Terraform-managed infrastructure. Authored system diagrams that accelerated team onboarding</li>
+										<li>Shaped frontend architecture standards with engineering leads, establishing React and Tailwind CSS best practices and evaluating generative code tools (Figma&rsquo;s code generation, AI-assisted development) to inform strategy</li>
+										<li>Established and institutionalized test-readiness framework and engineering-to-QA handoff, adopted beyond the originating team, reducing QA bottlenecks and allowing engineers to ship with greater autonomy</li>
 									</ul>
 								</div>
 
 								<div class="resume-entry">
 									<div class="resume-entry-head">
-										<span class="resume-role">Senior Software Engineer, <em>Pager</em></span>
+										<span class="resume-role">Senior Software Engineer, <em>Pager Health</em></span>
 										<span class="resume-dates">Jan. 2024 &ndash; Dec. 2024</span>
 									</div>
 									<ul class="resume-bullets">
-										<li>Improved developer experience across five teams by building a local SDK integration test project that eliminated full-environment deployments for endpoint validation, enabling engineers to test changes locally and iterate independently</li>
-										<li>Identified gaps in pre-release testing and launched gamified bug bashes that surfaced 10+ integration defects per session before production; the practice was later adopted by another team</li>
+										<li>Enhanced developer experience across five teams by building a local SDK integration test project that eliminated full-environment deployments for endpoint validation so engineers could test changes locally and iterate independently</li>
+										<li>Surfaced data hygiene and integrity deficiencies in Node.js backend services and shared libraries; refactored to standardize validation and normalization while adding secure observability with Google Cloud Logging</li>
+										<li>Identified gaps in pre-release testing and launched gamified bug bashes that surfaced 10+ integration defects per session before production; the practice was later adopted by other teams</li>
 									</ul>
 								</div>
 
@@ -340,9 +337,8 @@
 										<span class="resume-dates">Feb. 2023 &ndash; Nov. 2023</span>
 									</div>
 									<ul class="resume-bullets">
-										<li>Identified exact-match limitations in the existing search experience and proposed and implemented trigram-based fuzzy search, enabling partial and misspelled queries and improving record discoverability</li>
-										<li>Built core front-end and back-end scheduling and appointment-management workflows for clinical trials, integrating AWS services to improve the reliability of trial operations</li>
-										<li>Delivered production features with automated coverage in Pytest and Cucumber/Behave, using GitHub Actions and Harness to strengthen release confidence and deployment consistency</li>
+										<li>Implemented trigram-based fuzzy search to address exact-match limitations, enabling partial and misspelled queries and increasing record discoverability</li>
+										<li>Shipped React-based scheduling and appointment-management platform with Flask backend services, integrating AWS and comprehensive testing (Pytest, Cucumber/Behave) to improve deployment reliability</li>
 									</ul>
 								</div>
 
@@ -352,48 +348,32 @@
 										<span class="resume-dates">Mar. 2021 &ndash; Feb. 2023</span>
 									</div>
 									<ul class="resume-bullets">
-										<li>Led the design and implementation of an Amazon SQS&ndash;based shipment-processing system and 3PL fulfillment integration, automating order routing and improving fulfillment reliability</li>
-										<li>Led a three-engineer team to deliver an expedited marketing-site revamp using a headless CMS, enabling marketing stakeholders to manage site copy independently and launch on a compressed timeline</li>
-										<li>Built and scaled a CFR Part 11-compliant telehealth platform using React and Python/Flask, owning full-stack delivery and automated testing with Jest, Cypress, and Pytest across scheduling, EMR, and healthcare product-ordering workflows for multiple service lines</li>
-										<li>Rotated as release manager, coordinating production deployments and organization-wide release readiness; participated in on-call ops, monitoring system health, and resolving high-priority incidents to maintain platform stability</li>
-										<li>Conducted 12+ full-stack engineering interviews and onboarded six engineers across seniority levels; initiated a Code Reading Club and technical-debt forums to elevate code quality and engineering standards</li>
+										<li>Led the design and implementation of an Amazon SQS&ndash;based shipment-processing system and 3PL fulfillment integration, automating order routing and reducing fulfillment failures</li>
+										<li>Directed a team of three engineers to deliver an expedited marketing-site revamp using a headless CMS, giving marketing stakeholders the ability to manage site copy independently and launch on a compressed timeline</li>
+										<li>Engineered and scaled a containerized production telehealth platform (Docker) supporting scheduling, EMR, and product-ordering workflows across multiple service lines, with comprehensive automated testing (Jest, Cypress, Pytest)</li>
+										<li>Coordinated production deployments and organization-wide release readiness; monitored system health using AWS Logs and New Relic, participating in on-call ops to resolve high-priority incidents and maintain platform stability</li>
+										<li>Conducted 12+ full-stack engineering interviews and onboarded six engineers across seniority levels</li>
+										<li>Established a Code Reading Club and technical-debt forums to elevate code quality and engineering standards</li>
 									</ul>
 								</div>
 
-								<div class="resume-entry">
+								<div class="resume-entry resume-entry-compact">
 									<div class="resume-entry-head">
-										<span class="resume-role">Founder | Developer, <em>Forsythia Studio</em></span>
+										<span class="resume-role">Founder / Developer, <em>Forsythia Studio</em></span>
 										<span class="resume-dates">Aug. 2017 &ndash; Dec. 2019</span>
-									</div>
-									<ul class="resume-bullets">
-										<li>Built an e-commerce platform and automated marketing to drive customer acquisition; coordinated factories, freelancers, and PR agencies to launch 2+ annual collections of 25+ garments each</li>
-									</ul>
-								</div>
-
-								<div class="resume-entry resume-entry-compact">
-									<div class="resume-entry-head">
-										<span class="resume-role">First Creative Pattern Maker, <em>Marchesa</em></span>
-										<span class="resume-dates">Nov. 2018 &ndash; Nov. 2019</span>
-									</div>
-								</div>
-
-								<div class="resume-entry resume-entry-compact">
-									<div class="resume-entry-head">
-										<span class="resume-role">Assistant Designer / First Pattern Maker, <em>Christian Siriano</em></span>
-										<span class="resume-dates">Sept. 2013 &ndash; Mar. 2017</span>
 									</div>
 								</div>
 
 								<h3>Skills</h3>
 
 								<ul class="resume-skills">
-									<li><span class="resume-skill-label">Languages</span> TypeScript, JavaScript, Python, SQL, Ruby</li>
+									<li><span class="resume-skill-label">Languages</span> TypeScript, JavaScript, Python, Ruby</li>
 									<li><span class="resume-skill-label">Frontend</span> React, Next.js, Redux, Tailwind CSS</li>
-									<li><span class="resume-skill-label">Backend</span> Node.js, Fastify, NestJS, Flask, FastAPI, Django, Rails, GraphQL, TypeORM</li>
+									<li><span class="resume-skill-label">Backend</span> Node.js, Fastify, NestJS, Flask, FastAPI, Django, GraphQL, TypeORM, Rails</li>
 									<li><span class="resume-skill-label">Data</span> PostgreSQL, MongoDB, Redis</li>
 									<li><span class="resume-skill-label">Testing</span> Jest, Cypress, Pytest, Cucumber/Behave</li>
 									<li><span class="resume-skill-label">Cloud &amp; Infrastructure</span> AWS, GCP, Terraform, Docker, Kubernetes, GitHub Actions, Harness</li>
-									<li><span class="resume-skill-label">Tools</span> New Relic, Figma</li>
+									<li><span class="resume-skill-label">Tools</span> Claude, Cursor, New Relic, Figma</li>
 								</ul>
 
 								<h3>Education</h3>
@@ -468,7 +448,7 @@
 										<span class="icons-text">LinkedIn</span>
 									</li>
 									<li>
-										<a href="images/resume26ck1.pdf" class="far fa-file" target="_blank">
+										<a href="images/resume26ck2.pdf" class="far fa-file" target="_blank">
 										</a>
 										<br />
 										<span class="icons-text">Resumé</span>

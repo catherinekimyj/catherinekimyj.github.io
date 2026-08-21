@@ -2146,6 +2146,10 @@ input, select, textarea {
 	gap: 1rem;
 }
 
+.resume-entry-head + .resume-entry-head {
+	margin-top: 0.25rem;
+}
+
 .resume-role {
 	font-size: 0.9rem;
 	font-weight: 600;
