@@ -684,6 +684,21 @@ input, select, textarea {
 		border-radius: 50%;
 	}
 
+	/* Icons that ship as inline SVG rather than a devicon glyph (Claude, Cursor).
+	   They carry .devicon too, so they inherit its circle, color, and hover. */
+	.skill-svg {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.skill-svg svg {
+		width: 1rem;
+		height: 1rem;
+		display: block;
+		fill: currentColor;
+	}
+
 	.devicon-redux {
 		background-color: rgba(255, 255, 255, 0.075);
 		padding: 1rem;
